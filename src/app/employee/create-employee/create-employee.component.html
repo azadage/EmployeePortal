@@ -1,0 +1,57 @@
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit()" >
+
+  <div class="card">
+  
+    <div class="card-header">
+      <h5 class="card-title"> Create Employee Form </h5>
+    </div>
+
+    
+    
+  
+          <div class="card-body" >
+        <label for="fullName">Full Name :</label>
+       
+          <input id="fullName"  type="text"  name="fn" [(ngModel)]="employee.name" #fullNameControl="ngModel"
+            required>
+      
+      
+      
+      
+    
+    
+      
+        <label for="email">Email Id:</label>
+          <input id="email" type="text" name="email" [(ngModel)]="employee.email" #emailControl="ngModel" required>
+          
+        
+      
+
+            
+    
+      
+        <label for="phone">phone No:</label>
+          <input id="phone" type="number"  name="phone"  [(ngModel)]="employee.phone" #phoneNOControl="ngModel" required>
+          
+        
+    
+        
+          <label for="phone">Department:</label>
+            <input id="Department" type="text" class="form-control" name="Department" [(ngModel)]="employee.Department" #DepartmentControl="ngModel" required>
+           
+  
+
+
+</div>
+
+      <div class="card-footer">
+        <button type="submit">Save</button>
+      </div>
+      
+
+
+    
+</div>
+
+
+    </form>

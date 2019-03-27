@@ -1,0 +1,56 @@
+ <p>
+  employee works!
+</p>
+<div class="container"></div>
+<div *ngFor="let emp of employee">
+  <!-- <div class="card text-black bg-info"> -->
+    <div class="card" >
+        <div class="card text-black bg-info">
+        <div class="card-header">{{emp.name}}</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              
+        <img [src]="emp.photoPath" class="float-left" height="200px" width="200px">
+            </div>
+            
+            <div class="col-md-4">
+             
+            
+            <div class="row">ID:{{emp.id}}</div>
+         
+        
+          
+            <div class="row">
+            Name: {{emp.name}}
+          </div>
+          <div class="row">
+              Gender: {{emp.gender}}
+            </div>
+            <div class="row">
+               phone: {{emp.phone}}
+              </div>
+              <div class="row">
+                  mailId: {{emp.emailId}}
+                </div>
+                <div class="row">
+                    Department: {{emp.department}}
+                  </div>
+                  <div class="col-md-4">{{emp.Id}}</div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class=row>{{emp.Id}}</div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+     
+      
+  
+
+      
+      
+    
+     
+      
